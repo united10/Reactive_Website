@@ -1,0 +1,282 @@
+body{
+	background-color: #ffffcc;
+	margin:0px;
+}
+
+.head{
+	display: flex;
+	background-color: #45b39c;
+	flex-wrap: wrap;
+	max-height: 100px;
+	position: fixed;
+	width: 100%;
+}
+@media screen and (max-width: 280px) {
+	.body{
+		max-width: 100%
+	}
+	.head{
+		margin-bottom: 0px;
+		max-width: 380px;
+		max-height: 100px;
+		display: inline;
+		flex-direction: column;
+	}
+	.logo{
+		max-width: 15%;
+		max-height: 100px;
+	}
+	.det li{
+		flex-wrap: wrap;
+		justify-content: flex-end;	
+
+	}
+	.fixed-size-1,.fixed-size-2,.fixed-size-3{
+		max-width: 95%;
+	}
+
+	
+}
+.hero {
+    /* Sizing */
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white;
+    
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo{
+	flex: 2;
+	width:15%;
+	height:15%;
+	max-height: 100px;
+	max-width: 175px;
+}
+/* .heading{
+	flex:7;
+	font-size: 75px;
+	text-align: center;
+	margin: 50px 0px 0px;
+	font-family: arial;
+	color:  #1a5276 ;
+} */
+
+.det li{
+	flex:1;
+	list-style:none;
+	display: inline;
+	text-decoration: none;
+	padding-right: 5px;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+.det a{
+	text-decoration: none;
+}
+
+.column-layout {
+  max-width: 1400px;
+  background-color: #ffffcc;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.main-column {
+  flex: 2;
+  order: 2;
+}
+
+.sidebar-one {
+  flex: 1;
+  order: 1;
+  box-sizing: border-box;;
+  padding: 5px;
+
+}
+
+.sidebar-two {
+  flex: 1;
+  order: 3;
+  box-sizing: border-box;;
+  padding: 5px;
+
+}
+
+.fixed-size-container {
+  max-width: 1450px;
+  /* margin: 40px auto 0 auto; */
+  background-color: #ffffcc;
+  /* padding: 30px 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.fixed-size {
+  /*width: 150px;
+  /*height: 100px;*/
+  background-color: #1a53ff;
+  color: #FFF;
+  line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 20px;
+  background-image:url(../img/responsive-design.png);
+}
+
+.Mid-Heading{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+
+}
+
+.fixed-size-1 {
+  width: 500px;
+  height: 100px;
+  background-color: #1a53ff;
+  color: black;
+  font-weight: bold;
+/*   line-height: 100px;
+text-align: center;
+font-weight: bold;
+font-size: 60px; */
+  /* margin-bottom: 20px; */
+  background-image:url(../img/webdev.jpeg);
+}
+
+.fixed-size-2{
+  width: 500px;
+  height: 100px;
+  background-color: #1a53ff;
+  color: black;
+  font-weight: bold;
+  /* line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px; */
+  /* margin-bottom: 20px; */
+  background-image:url(../img/mobile.jpeg);
+}
+
+.fixed-size-3{
+font-weight: bold;
+  width: 500px;
+  height: 100px;
+  background-color: #1a53ff;
+  color: black;
+/*   line-height: 100px;
+text-align: center;
+font-weight: bold;
+font-size: 60px;
+margin-bottom: 20px; */
+  background-image:url(../img/migration.png);
+}
+
+/*<Form Css*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #ffffcc;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 320px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  /* margin: 5px 2px; */
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
