@@ -9,17 +9,21 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-	<section class="head">
-		<img src="img/logo.png" alt="WebCon Services" class="logo"/>
-		<nav class="det">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Our Projects</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</nav>
-	</section>
+  <header>
+    <h1 class="logo">WebCon Services</h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+</header>
 	<section class="hero">
             <div class="hero-inner">
                 <h1>WebCon Services</h1>
@@ -96,10 +100,11 @@
 
 <footer>
 	<p>Reach us  out on</p>
-	<a href="#" class="fa fa-facebook"></a>
-	<a href="#" class="fa fa-twitter"></a>
-	<a href="#" class="fa fa-google"></a>
-	<a href="#" class="fa fa-linkedin"></a>
-
+  <div class="Social">{
+	   <a href="#" class="fa fa-facebook"></a>
+	   <a href="#" class="fa fa-twitter"></a>
+	   <a href="#" class="fa fa-google"></a>
+	   <a href="#" class="fa fa-linkedin"></a>
+  }
 </footer>
 </body>
